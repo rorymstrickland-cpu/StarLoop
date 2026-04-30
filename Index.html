@@ -72,6 +72,10 @@
             min-width: 260px;
             box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
             border: 1px solid #e2e8f0;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
         }
         .card h3 {
             font-size: 1.5rem;
@@ -100,13 +104,16 @@
             display: inline-block;
             background: #1e3a5f;
             color: white;
-            padding: 0.6rem 1.2rem;
+            padding: 0.7rem 1.2rem;
             border-radius: 40px;
             text-decoration: none;
             font-weight: 600;
             margin-top: 1rem;
             width: 100%;
             text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
         }
         .btn:hover {
             background: #0f2b45;
@@ -146,37 +153,49 @@
     </div>
 
     <div class="pricing-grid">
+        <!-- Review Plan - $97 + $50 setup -->
         <div class="card">
             <h3>Reviews</h3>
             <div class="price">$97</div>
-            <div class="setup">$25 setup • per month</div>
+            <div class="setup">+ $50 setup • per month</div>
             <ul class="feature-list">
                 <li>✅ We text your customers for reviews</li>
                 <li>✅ Monitor Google reviews for you</li>
                 <li>✅ Help respond to bad reviews</li>
                 <li>✅ Monthly review report</li>
             </ul>
-            <a href="#" class="btn">Get started →</a>
+            <a href="https://buy.stripe.com/eVqcN51BY3BVd5d33I1sQ04" class="btn">Get started →</a>
         </div>
+        
+        <!-- Reviews + Missed Calls - $197 + $100 setup -->
         <div class="card">
             <h3>Reviews + Missed Calls</h3>
             <div class="price">$197</div>
-            <div class="setup">$100 setup • per month</div>
+            <div class="setup">+ $100 setup • per month</div>
             <ul class="feature-list">
-                <li>✅ Everything in Reviews</li>
+                <li>✅ We text your customers for reviews</li>
+                <li>✅ Monitor Google reviews for you</li>
+                <li>✅ Help respond to bad reviews</li>
                 <li>✅ Missed calls: we text them back</li>
+                <li>✅ Monthly report included</li>
             </ul>
-            <a href="#" class="btn">Get started →</a>
+            <a href="https://buy.stripe.com/8x24gz80mb4nghpawa1sQ05" class="btn">Get started →</a>
         </div>
+        
+        <!-- Everything Plan - $297 + $200 setup -->
         <div class="card">
             <h3>Everything</h3>
             <div class="price">$297</div>
-            <div class="setup">$200 setup • per month</div>
+            <div class="setup">+ $200 setup • per month</div>
             <ul class="feature-list">
-                <li>✅ Reviews + Missed Calls (everything left)</li>
-                <li>✅ Custom website (simple, done for you)</li>
+                <li>✅ We text your customers for reviews</li>
+                <li>✅ Monitor Google reviews for you</li>
+                <li>✅ Help respond to bad reviews</li>
+                <li>✅ Missed calls: we text them back</li>
+                <li>✅ Custom website built for you</li>
+                <li>✅ Monthly report included</li>
             </ul>
-            <a href="#" class="btn">Get started →</a>
+            <a href="https://buy.stripe.com/fZu8wPeoK0pJ8OX7jY1sQ06" class="btn">Get started →</a>
         </div>
     </div>
     
