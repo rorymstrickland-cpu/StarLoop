@@ -44,7 +44,7 @@
         }
         .hero {
             text-align: center;
-            padding: 3rem 0 2rem;
+            padding: 2rem 0 1rem;
         }
         .hero h1 {
             font-size: 2rem;
@@ -55,14 +55,43 @@
             font-size: 1.1rem;
             color: #334155;
             max-width: 700px;
-            margin: 0 auto 2rem;
+            margin: 0 auto;
+        }
+        .trial-banner {
+            background: linear-gradient(135deg, #1e3a5f, #2d4a7a);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin: 2rem 0;
+        }
+        .trial-banner h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .trial-banner .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0.5rem 0;
+        }
+        .trial-banner .price small {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        .trial-banner .guarantee {
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
         }
         .pricing-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
             justify-content: center;
-            margin: 3rem 0;
+            margin: 2rem 0;
         }
         .card {
             background: white;
@@ -115,6 +144,12 @@
             cursor: pointer;
             font-size: 1rem;
         }
+        .btn-trial {
+            background: #2d6a4f;
+        }
+        .btn-trial:hover {
+            background: #1b4d3e;
+        }
         .btn:hover {
             background: #0f2b45;
         }
@@ -150,6 +185,16 @@
         <h1>Get more customers. Keep the ones you have.</h1>
         <p>Review management • missed call text back • websites<br> 
         For Rome's restaurants, salons, contractors & shops.</p>
+    </div>
+
+    <!-- TRIAL OFFER SECTION -->
+    <div class="trial-banner">
+        <h2>🎯 Try StarLoop Risk-Free</h2>
+        <div class="price">$50 <small>for the first month</small></div>
+        <p><strong>30-Day Money-Back Guarantee</strong><br>
+        If you don't get at least 5 new customer reviews in your first 30 days, we'll refund your $50. No questions asked.</p>
+        <div class="guarantee">✓ No long-term contract ✓ Cancel anytime after trial</div>
+        <a href="https://buy.stripe.com/9B68wP94qfkD0ircEi1sQ0a" class="btn btn-trial" style="width: auto; margin-top: 1rem; padding: 0.7rem 2rem;">Claim My Trial →</a>
     </div>
 
     <div class="pricing-grid">
