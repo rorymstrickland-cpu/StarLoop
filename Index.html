@@ -64,6 +64,7 @@
             padding: 1.5rem;
             border-radius: 1rem;
             margin: 2rem 0;
+            border: 2px solid #ffcc00;
         }
         .trial-banner h2 {
             font-size: 1.5rem;
@@ -78,7 +79,74 @@
             font-size: 1rem;
             font-weight: normal;
         }
-        .trial-banner .guarantee {
+        .trial-banner .plan-name {
+            background: #ffcc00;
+            color: #1e3a5f;
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .trial-included {
+            background: rgba(255,255,255,0.15);
+            border-radius: 0.8rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 400px;
+            text-align: left;
+        }
+        .trial-included h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .trial-included ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.85rem;
+        }
+        .trial-included li {
+            padding: 0.2rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .trial-included li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        .trial-not-included {
+            background: rgba(0,0,0,0.3);
+            border-radius: 0.8rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 400px;
+            text-align: left;
+        }
+        .trial-not-included h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            color: #ffcc00;
+        }
+        .trial-not-included ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.85rem;
+        }
+        .trial-not-included li {
+            padding: 0.2rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .trial-not-included li::before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+        }
+        .guarantee {
             background: rgba(255,255,255,0.2);
             display: inline-block;
             padding: 0.3rem 1rem;
@@ -187,14 +255,37 @@
         For Rome's restaurants, salons, contractors & shops.</p>
     </div>
 
-    <!-- TRIAL OFFER SECTION -->
+    <!-- TRIAL OFFER SECTION - CLEARLY ONLY FOR REVIEWS PLAN -->
     <div class="trial-banner">
-        <h2>🎯 Try StarLoop Risk-Free</h2>
+        <div class="plan-name">⚠️ TRIAL OFFER - REVIEWS PLAN ONLY ⚠️</div>
+        <h2>Try StarLoop Risk-Free</h2>
         <div class="price">$50 <small>for the first month</small></div>
+        
+        <div class="trial-included">
+            <h4>✅ WHAT'S INCLUDED IN THIS TRIAL:</h4>
+            <ul>
+                <li>We text your customers for reviews</li>
+                <li>Monitor Google reviews for you</li>
+                <li>Help respond to bad reviews</li>
+                <li>Monthly review report</li>
+            </ul>
+        </div>
+        
+        <div class="trial-not-included">
+            <h4>❌ NOT INCLUDED IN THIS TRIAL:</h4>
+            <ul>
+                <li>Missed call text back service</li>
+                <li>Custom website building</li>
+                <li>Priority support</li>
+            </ul>
+        </div>
+        
         <p><strong>30-Day Money-Back Guarantee</strong><br>
-        If you don't get at least 5 new customer reviews in your first 30 days, we'll refund your $50. No questions asked.</p>
-        <div class="guarantee">✓ No long-term contract ✓ Cancel anytime after trial</div>
-        <a href="https://buy.stripe.com/9B68wP94qfkD0ircEi1sQ0a" class="btn btn-trial" style="width: auto; margin-top: 1rem; padding: 0.7rem 2rem;">Claim My Trial →</a>
+        If you don't get at least 5 new customer reviews in 30 days, we'll refund your $50.</p>
+        
+        <div class="guarantee">✓ No contract ✓ Cancel anytime ✓ Upgrade to higher plans anytime</div>
+        
+        <a href="https://buy.stripe.com/9B68wP94qfkD0ircEi1sQ0a" class="btn btn-trial" style="width: auto; margin-top: 1rem; padding: 0.7rem 2rem;">Claim My $50 Trial →</a>
     </div>
 
     <div class="pricing-grid">
